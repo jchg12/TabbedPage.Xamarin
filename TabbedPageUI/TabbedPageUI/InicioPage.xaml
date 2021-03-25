@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedPageUI.InicioPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Image Source="homeicon.png"  WidthRequest="50" Margin="30"/>
+            <Label Text="Bienvenido a Inicio!" TextColor="Black" FontSize="Medium"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+            <Grid Margin="0,5,0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text=" Nombre y Apellidos :" TextColor="Black" />
+                <Label Text="Juan Candido Huaylla Garcia"  Grid.Column="1"/>
+            </Grid>
+            <Grid Margin="0,0,0,30">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text=" Fecha de Nacimiento :" TextColor="Black"/>
+                <Label Text=" 23/12/1997" Grid.Column="1" />
+            </Grid>
+
+            <Image Source="inicio.png " WidthRequest="100"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
